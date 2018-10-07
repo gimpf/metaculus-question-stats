@@ -28,7 +28,7 @@ def countYes:
   map(select(.resolved and .res)) | length;
 
 def ratioYes:
-  countYes as $yes | countResolved as $resolved | if $resolved == 0 then null else $yes / $resolved end;
+  countYes as $yes | countUnambiguous as $resolved | if $resolved == 0 then null else $yes / $resolved end;
 
 def rstats:
   { resolving: . | length, resolved: . | countResolved, unambiguous: . | countUnambiguous, yes: . | countYes, ratio: . | ratioYes };
