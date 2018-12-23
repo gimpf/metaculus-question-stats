@@ -1,3 +1,7 @@
+#
+# run with: jq -fr stats.jq data-questions.json
+#
+
 include "./lib";
 
 . as $all |
