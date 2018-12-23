@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# echo Convert raw data to common format...
+jq -s -f cvt-api.jq data-questions-raw.json > data-questions.json

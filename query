@@ -1,0 +1,6 @@
+#!/bin/sh
+if [ ! -f "$1.jq" ]; then
+  1>&2 echo Error: Need one arg, like ./query stats
+  exit 2
+fi
+jq -fr "$1.jq" data-questions.json || exit 1

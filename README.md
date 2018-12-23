@@ -10,7 +10,7 @@ Simple stats about metaculus questions, like number created or resolved.
 
 
 **Enjoyment**:
-To get results, run `./run.sh`, and get something like
+To get results, run `./fetch && ./convert && ./query stats`, and get something like
 
 ```csv
 "period","resolving","resolved","unambiguous","yes","ratio","new","short7d","short14d","short28d"
