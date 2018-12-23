@@ -58,4 +58,6 @@ reduce .[] as $item (
     . + [
         ({ "before": $item.e } +
         ($all | upTo($item.e) | map(.n) | add | { "count": . }))
-    ])
+    ]) |
+["before", "count"] as $keys | $keys, map([.[ $keys[] ]])[] |
+@csv
