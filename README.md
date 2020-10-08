@@ -1,4 +1,6 @@
-# Metaculus Question Stats
+# OBSOLETE Metaculus Question Stats
+
+**Don't use this.  Hopelessly buggy, outdated, unmaintained!**
 
 Simple stats about metaculus questions, like number created or resolved.
 
